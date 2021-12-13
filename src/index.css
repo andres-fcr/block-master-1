@@ -1,0 +1,30 @@
+* {
+  background-color: #0F0E17;
+
+}
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+Barra {
+  color: white;
+}
+
+#contenedor {
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  margin-top: 30px; 
+}
+
+#contenedor1 {
+  justify-content: center;
+}
