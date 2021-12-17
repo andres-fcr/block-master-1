@@ -5,5 +5,5 @@ import { Button } from "react-bootstrap";
 export const LoginButton = () => {
     const { loginWithRedirect } = useAuth0();
 
-    return <Button variant="outline-warning" onClick={() => loginWithRedirect()}>Login</Button>;
+    return <Button className="btn-link" variant="outline-none" onClick={() => loginWithRedirect()}>Login</Button>;
 };

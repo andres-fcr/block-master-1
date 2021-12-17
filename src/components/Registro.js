@@ -73,7 +73,7 @@ const Registro = () => {
                         name='release_date'
                         value={release_date}
                         onChange={handleCahnge}
-                        type="text"
+                        type="date"
                         class="form-control"
                         id="formGroupExampleInput"
                         placeholder="aaaa-mm-dd"

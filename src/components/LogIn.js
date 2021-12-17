@@ -13,10 +13,11 @@ const LogIn = () => {
             <Container className='mx-auto'>
 
                 <img src="https://res.cloudinary.com/dbyw7mbt6/image/upload/v1638920590/logo-blockBuster_apegqx.png" className="App-logo" alt="logo" />
-                <br/>
+              
                 {isAuthenticated ? (
                     <>
                         <Profile />
+                        <br />
                         <LogoutButton />
                     </>
                 ) : (

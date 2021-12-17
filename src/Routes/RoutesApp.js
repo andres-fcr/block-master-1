@@ -7,8 +7,10 @@ import Details from '../components/Details'
 import { url } from '../helpers/url'
 import { BsSearch } from 'react-icons/bs'
 import Registro from '../components/Registro'
-import LogIn from '../components/LogIn'
 import { useAuth0 } from '@auth0/auth0-react'
+import { Profile } from '../components/Profile'
+import { LogoutButton } from '../components/Logout'
+import { LoginButton } from '../components/Login1'
 
 
 const RoutesApp = () => {
@@ -86,20 +88,22 @@ const RoutesApp = () => {
                                 <Nav.Link style={{ color: '#FED941' }} href="#action1">Agregar pelicula</Nav.Link>
                                 </Link>
                                 <Link to="/login">
-                                <Nav.Link style={{ color: '#FED941' }} href="#action2">Iniciar sesión</Nav.Link>
+                                <LoginButton style={{ color: '#FED941' }} href="#action2">Iniciar sesión</LoginButton>
                                 </Link>
+                                <Profile className="px-3 img-fluid" />
+                                <LogoutButton  className="btn-link" />
                             </Nav>
                             <Form className="d-flex" onSubmit={handleSubmit} >
                                 <FormControl
                                     variant="outline-warning"
                                     type="search"
                                     placeholder="Busca tu pelicula favorita"
-                                    className="me-2"
+                                    className="me-2 px-3"
                                     aria-label="Search"
                                     value={busqueda}
                                     onChange={handleChange}
                                 />
-                                <Button variant="outline-warning"><BsSearch /></Button>
+                                <Button variant="outline-warning" className="px-3"><BsSearch /></Button>
                             </Form>
                         </Navbar.Collapse>
                     </Container>
@@ -108,7 +112,6 @@ const RoutesApp = () => {
                     <Route path="/" element={<Cards movie={movie} />} />
                     <Route path="/detalle/:id" element={<Details movie={movie} />} />
                     <Route path="/register" element={<Registro />} />
-                    <Route path="/login" element={<LogIn />} />
                 </Routes>
             </BrowserRouter>
 

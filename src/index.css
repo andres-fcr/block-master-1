@@ -28,3 +28,12 @@ h3 {
 #contenedor1 {
   justify-content: center;
 }
+
+#profile {
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+#carouselExampleIndicators{
+width: 80%;
+}

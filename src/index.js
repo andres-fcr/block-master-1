@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Container from './container/Container';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import { Auth0Provider } from '@auth0/auth0-react'
 
 ReactDOM.render(
