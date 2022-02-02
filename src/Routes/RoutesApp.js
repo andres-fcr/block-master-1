@@ -16,11 +16,10 @@ import { LoginButton } from '../components/Login1'
 const RoutesApp = () => {
 
     const [movie, setMovie] = useState([])
+
     const [tablaUsuarios, setTablaUsuarios] = useState([]);
     const [busqueda, setBusqueda] = useState("");
     const {loginWithRedirect} = useAuth0()
-
-
 
     useEffect(() => {
         getData()
@@ -51,11 +50,9 @@ const RoutesApp = () => {
         setMovie(resultadosBusqueda);
     }
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
     }
-   
 
     return (
         <div>
